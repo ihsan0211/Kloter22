@@ -1,0 +1,22 @@
+nysql -u root -p
+
+
+-- Buat Database
+CREATE DATABASE dwusers;
+USE dwusers;
+
+-- Buat Table
+CREATE TABLE users_tb (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(64) NOT NULL,
+image VARCHAR(64) NOT NULL
+); 
+
+CREATE TABLE skill_tb (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(64) NOT NULL,
+user_id INT NULL,
+FOREIGN KEY (user_id) REFERENCES users_tb(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);
