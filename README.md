@@ -72,7 +72,7 @@ WHERE skill_tb.name = 'Javascript';
 ### Buka Web Aplikasi
 
 -- Buka browser
--- Buka localhost/path/index.php  -- Untuk path disesuaikan dengan directory
+-- Buka localhost/path/index.php  -- Untuk path(dwusers) disesuaikan dengan directory
 
 
 
